@@ -1,9 +1,9 @@
-import Header from "../src/components/layout/header/LayoutHeader.container";
+import MainBoard from "../src/components/main/MainBoard.container";
 
 const Home = () => {
   return (
     <>
-      <div>aa</div>
+      <MainBoard />
     </>
   );
 };
