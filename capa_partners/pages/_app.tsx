@@ -1,7 +1,17 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import { Global } from "@emotion/react";
+import { globalStyles } from "../src/commons/globalStyles";
+import Layout from "../src/components/layout";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const MyApp = ({ Component, pageProps }) => {
+  return (
+    <>
+      <Global styles={globalStyles} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
+  );
+};
 
-export default MyApp
+export default MyApp;
