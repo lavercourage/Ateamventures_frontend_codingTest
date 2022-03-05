@@ -23,6 +23,25 @@ export const Content = styled.span`
   line-height: 1.5;
 `;
 
+export const Filter = styled.div`
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const InnerFilter = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const InnerText = styled.span`
+  margin-left: 16px;
+  font-family: "NotoSansKRM";
+  font-size: 14px;
+  line-height: 1.4;
+`;
+
 export const NoneContent = styled.div`
   height: 100px;
   display: flex;
