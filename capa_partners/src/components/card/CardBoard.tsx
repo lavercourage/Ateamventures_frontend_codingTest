@@ -1,10 +1,9 @@
 import * as C from "./CardBoard.styles";
 
 const CardBoard = (props: any) => {
-  console.log("dataprops: ", props.data.id);
   return (
     <>
-      {props.data.map((el) => (
+      {props.data.map((el: any) => (
         <C.Wrapper key={el.id}>
           <C.InnterWrapper>
             <C.Title>{el.title}</C.Title>

@@ -5,7 +5,6 @@ import MethodDropdown from "../dropdown/method/MethodDropdown";
 import SwitchButton from "../switch/SwitchButton";
 
 const MainBoard = (props: any) => {
-  console.log("props넘겨주기: ", props.data);
   const data = props.data;
   return (
     <>
