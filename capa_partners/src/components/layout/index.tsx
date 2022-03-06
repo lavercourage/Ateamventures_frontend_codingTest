@@ -1,4 +1,4 @@
-import LayoutHeader from "./header/LayoutHeader.container";
+import LayoutHeader from "./header/LayoutHeader";
 import styled from "@emotion/styled";
 
 const Layout = (props: any) => {

@@ -3,13 +3,12 @@ import styled from "@emotion/styled";
 export const Wrapper = styled.div`
   width: 366px;
   height: 356px;
-  /* margin: ; */
   padding: 24px 16px;
   background-color: #ffffff;
   :hover {
     outline: 2px solid #2196f3;
   }
-  border: 1px solid #e5e5e5;
+  outline: 1px solid #e5e5e5;
   border-radius: 4px;
 `;
 
@@ -26,13 +25,13 @@ export const Title = styled.span`
   line-height: 1.5;
 `;
 
-export const Tag = styled.div`
+export const Status = styled.div`
   width: 50px;
   height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ffa000;
+  outline: 1px solid #ffa000;
   border-radius: 12px;
   color: #ffa000;
   font-family: "NotoSansKRM";
@@ -40,7 +39,7 @@ export const Tag = styled.div`
   text-align: center;
 `;
 
-export const Company = styled.div`
+export const Client = styled.div`
   height: 20px;
   margin-top: 4px;
   font-family: "NotoSansKRM";
@@ -48,7 +47,7 @@ export const Company = styled.div`
   line-height: 1.4;
 `;
 
-export const Date = styled.div`
+export const Due = styled.div`
   height: 20px;
   margin-top: 24px;
   color: #939fa5;

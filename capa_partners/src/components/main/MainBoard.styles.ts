@@ -47,10 +47,16 @@ export const NoneContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #c2c2c2;
+  outline: 1px solid #c2c2c2;
   border-radius: 4px;
   color: #939fa5;
   font-family: "NotoSansKRR";
   font-size: 14px;
   text-align: center;
+`;
+
+export const CardWrap = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 366px);
+  gap: 16px;
 `;

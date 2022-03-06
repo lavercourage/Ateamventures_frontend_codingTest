@@ -1,6 +1,6 @@
 import * as H from "./LayoutHeader.styles";
 
-const LayoutHeaderUI = () => {
+const LayoutHeader = () => {
   return (
     <H.Wrapper>
       <H.Logo src="/images/MainLogo.svg" />
@@ -16,4 +16,4 @@ const LayoutHeaderUI = () => {
   );
 };
 
-export default LayoutHeaderUI;
+export default LayoutHeader;
