@@ -1,11 +1,14 @@
 import { Switch } from "antd";
 
-const onChange = (checked: any) => {
-  console.log(`switch to ${checked}`);
-};
-
-const SwitchButton = () => {
-  return <Switch defaultChecked={false} onChange={onChange} />;
+const SwitchButton = (props: any) => {
+  return (
+    <Switch
+      defaultChecked={false}
+      onChange={(value) => {
+        props.setIsConsult(value);
+      }}
+    />
+  );
 };
 
 export default SwitchButton;

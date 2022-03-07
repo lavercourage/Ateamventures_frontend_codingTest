@@ -10,6 +10,7 @@ const Home = ({ data }) => {
 
 export default Home;
 
+// 데이터 호출
 export const getServerSideProps = async () => {
   const res = await fetch("http://localhost:4000/requests");
   const data = await res.json();

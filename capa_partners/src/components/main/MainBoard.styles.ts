@@ -35,6 +35,25 @@ export const InnerFilter = styled.div`
   align-items: center;
 `;
 
+export const RefreshWrapper = styled.div`
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  :hover {
+    cursor: pointer;
+  }
+`;
+
+export const Icon = styled.img`
+  height: 24px;
+  margin-right: 8px;
+`;
+
+export const RefreshButton = styled.span`
+  color: #2196f3;
+  font-size: 12px;
+`;
+
 export const InnerText = styled.span`
   margin-left: 16px;
   font-family: "NotoSansKRM";
@@ -56,6 +75,8 @@ export const NoneContent = styled.div`
 `;
 
 export const CardWrap = styled.div`
+  display: flex;
+  flex-direction: row;
   display: grid;
   grid-template-columns: repeat(3, 366px);
   gap: 16px;

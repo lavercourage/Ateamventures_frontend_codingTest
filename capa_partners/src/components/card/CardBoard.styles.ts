@@ -87,32 +87,3 @@ export const ButtonWrapper = styled.div`
   margin-top: 24px;
   display: flex;
 `;
-
-export const ButtonB = styled.button`
-  width: 108px;
-  height: 32px;
-  background-color: #2196f3;
-  border: none;
-  border-radius: 4px;
-  color: #ffffff;
-  font-family: "NotoSansKRM";
-  font-size: 14px;
-  :hover {
-    cursor: pointer;
-  }
-`;
-
-export const ButtonW = styled.button`
-  width: 76px;
-  height: 32px;
-  margin-left: 8px;
-  background-color: #ffffff;
-  border: 1px solid #2196f3;
-  border-radius: 4px;
-  color: #2196f3;
-  font-family: "NotoSansKRM";
-  font-size: 14px;
-  :hover {
-    cursor: pointer;
-  }
-`;

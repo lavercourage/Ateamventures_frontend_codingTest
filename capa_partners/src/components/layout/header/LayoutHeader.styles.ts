@@ -34,6 +34,9 @@ export const Icon = styled.img`
 export const Title = styled.span`
   color: #ffffff;
   font-size: 14px;
+  :hover {
+    cursor: pointer;
+  }
 `;
 
 export const Bar = styled.div`
