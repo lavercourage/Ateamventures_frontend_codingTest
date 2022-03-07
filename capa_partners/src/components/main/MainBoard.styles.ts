@@ -1,7 +1,13 @@
 import styled from "@emotion/styled";
+import { breakPoints } from "../../commons/media";
 
 export const Wrapper = styled.div`
+  width: 100%;
+  height: 100%;
   padding: 40px 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const TopWrapper = styled.div`
@@ -9,6 +15,12 @@ export const TopWrapper = styled.div`
   margin-bottom: 32px;
   display: flex;
   flex-direction: column;
+
+  @media ${breakPoints.mobile} {
+    width: 320px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 export const Title = styled.span`
@@ -28,11 +40,29 @@ export const Filter = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media ${breakPoints.mobile} {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
-export const InnerFilter = styled.div`
+export const InnerFilterLeft = styled.div`
   display: flex;
   align-items: center;
+`;
+
+export const InnerFilterRight = styled.div`
+  display: flex;
+  align-items: center;
+
+  @media ${breakPoints.mobile} {
+    margin-top: 20px;
+    font-family: "NotoSansKRM";
+    font-size: 14px;
+    line-height: 1.4;
+  }
 `;
 
 export const RefreshWrapper = styled.div`
@@ -51,6 +81,7 @@ export const Icon = styled.img`
 
 export const RefreshButton = styled.span`
   color: #2196f3;
+  font-family: "NotoSansKRR";
   font-size: 12px;
 `;
 
@@ -62,6 +93,7 @@ export const InnerText = styled.span`
 `;
 
 export const NoneContent = styled.div`
+  width: 1130px;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -72,12 +104,20 @@ export const NoneContent = styled.div`
   font-family: "NotoSansKRR";
   font-size: 14px;
   text-align: center;
+
+  @media ${breakPoints.mobile} {
+    width: 320px;
+  }
 `;
 
 export const CardWrap = styled.div`
-  display: flex;
-  flex-direction: row;
   display: grid;
   grid-template-columns: repeat(3, 366px);
   gap: 16px;
+
+  @media ${breakPoints.mobile} {
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    gap: 16px;
+  }
 `;

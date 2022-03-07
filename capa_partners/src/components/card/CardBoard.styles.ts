@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { breakPoints } from "../../commons/media";
 
 export const Wrapper = styled.div`
   width: 366px;
@@ -10,6 +11,11 @@ export const Wrapper = styled.div`
   }
   outline: 1px solid #e5e5e5;
   border-radius: 4px;
+
+  @media ${breakPoints.mobile} {
+    width: 320px;
+    height: 344px;
+  }
 `;
 
 export const InnterWrapper = styled.div`

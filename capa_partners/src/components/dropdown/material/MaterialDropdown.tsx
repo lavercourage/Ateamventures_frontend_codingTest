@@ -2,11 +2,6 @@ import { Menu, Dropdown, Button, Checkbox } from "antd";
 import { CaretDownOutlined } from "@ant-design/icons";
 
 // 드롭다운
-const handleButtonClick = (e: any) => {
-  // message.info("Click on left button.");
-  console.log("click left button", e);
-};
-
 const handleMenuClick = (e: any) => {
   console.log("click", e);
 };

@@ -8,12 +8,12 @@ import { useState } from "react";
 const MainBoard = (props: any) => {
   const data = props.data;
 
+  // 상담 중인 요청만 보기
+  const [isConsult, setIsConsult] = useState(false);
+
   // 필터링 리셋 버튼
   const onClickRefreshButton = () => {};
 
-  // 상담 중인 요청만 보기
-  const [isConsult, setIsConsult] = useState(false);
-  console.log("isConsult", isConsult);
   return (
     <>
       <M.Wrapper>
@@ -21,7 +21,7 @@ const MainBoard = (props: any) => {
           <M.Title>들어온 요청</M.Title>
           <M.Content>파트너님에게 딱 맞는 요청서를 찾아보세요.</M.Content>
           <M.Filter>
-            <M.InnerFilter>
+            <M.InnerFilterLeft>
               <MaterialDropdown />
               <MethodDropdown />
               {/* isSelect ? true : false */}
@@ -30,11 +30,11 @@ const MainBoard = (props: any) => {
                 <M.RefreshButton>필터링 리셋</M.RefreshButton>
               </M.RefreshWrapper>
               {/*  */}
-            </M.InnerFilter>
-            <M.InnerFilter>
+            </M.InnerFilterLeft>
+            <M.InnerFilterRight>
               <SwitchButton setIsConsult={setIsConsult} />
               <M.InnerText>상담 중인 요청만 보기</M.InnerText>
-            </M.InnerFilter>
+            </M.InnerFilterRight>
           </M.Filter>
         </M.TopWrapper>
         <M.CardWrap>

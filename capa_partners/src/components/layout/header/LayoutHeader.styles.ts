@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
+import { breakPoints } from "../../../commons/media";
 
 export const Wrapper = styled.header`
-  /* position: fixed; */
   width: 100%;
   height: 70px;
   padding: 0 40px;
@@ -10,10 +10,29 @@ export const Wrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media ${breakPoints.mobile} {
+    height: 44px;
+    padding: 0 20px;
+  }
+`;
+
+export const MenuIcon = styled.img`
+  display: none;
+
+  @media ${breakPoints.mobile} {
+    height: 20px;
+    display: flex;
+  }
 `;
 
 export const Logo = styled.img`
-  width: 153px;
+  height: 20px;
+
+  @media ${breakPoints.mobile} {
+    height: 12px;
+    margin-left: 16px;
+  }
 `;
 
 export const Menu = styled.span`
@@ -26,7 +45,7 @@ export const TitleWrapper = styled.span`
   align-items: center;
 `;
 
-export const Icon = styled.img`
+export const BuildIcon = styled.img`
   height: 15px;
   margin-right: 8px;
 `;
