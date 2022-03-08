@@ -6,19 +6,18 @@ export const Wrapper = styled.div`
   height: 356px;
   padding: 24px 16px;
   background-color: #ffffff;
+  outline: 1px solid #e5e5e5;
+  border-radius: 4px;
   :hover {
     outline: 2px solid #2196f3;
   }
-  outline: 1px solid #e5e5e5;
-  border-radius: 4px;
-
   @media ${breakPoints.mobile} {
     width: 320px;
     height: 344px;
   }
 `;
 
-export const InnterWrapper = styled.div`
+export const InnerWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;

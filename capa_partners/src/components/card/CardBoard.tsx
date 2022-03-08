@@ -14,10 +14,10 @@ const CardBoard = (props: any) => {
                 {el.status === "상담중" && (
                   // 상태 : 상담 중인 요청만 보기
                   <C.Wrapper>
-                    <C.InnterWrapper>
+                    <C.InnerWrapper>
                       <C.Title>{el.title}</C.Title>
                       <C.Status>{el.status}</C.Status>
-                    </C.InnterWrapper>
+                    </C.InnerWrapper>
                     <C.Client>{el.client}</C.Client>
                     <C.Due>{el.due}까지 납기</C.Due>
                     <C.Border />
@@ -48,14 +48,14 @@ const CardBoard = (props: any) => {
         : // 상태 : 모든 요청 보기
           props.data.map((el: any) => (
             <C.Wrapper key={el.id}>
-              <C.InnterWrapper>
+              <C.InnerWrapper>
                 <C.Title>{el.title}</C.Title>
                 {el.status === "상담중" ? (
                   <C.Status>{el.status}</C.Status>
                 ) : (
                   <></>
                 )}
-              </C.InnterWrapper>
+              </C.InnerWrapper>
               <C.Client>{el.client}</C.Client>
               <C.Due>{el.due}까지 납기</C.Due>
               <C.Border />

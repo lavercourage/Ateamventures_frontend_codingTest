@@ -1,30 +1,28 @@
 import styled from "@emotion/styled";
 import { breakPoints } from "../../../commons/media";
 
-export const Wrapper = styled.header`
+export const WrapperWeb = styled.header`
   width: 100%;
   height: 70px;
   padding: 0 40px;
-  background-color: #1565c0;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  background-color: #1565c0;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
   @media ${breakPoints.mobile} {
     height: 44px;
     padding: 0 20px;
   }
 `;
 
-export const LeftWrapper = styled.div`
+export const InnerWrapper_WL = styled.div`
   display: flex;
   align-items: center;
 `;
 
 export const MenuIcon = styled.img<{ isOpen: boolean }>`
   display: none;
-
   @media ${breakPoints.mobile} {
     height: 20px;
     display: flex;
@@ -34,19 +32,17 @@ export const MenuIcon = styled.img<{ isOpen: boolean }>`
   }
 `;
 
-export const Logo = styled.img`
+export const LogoWeb = styled.img`
   height: 20px;
-
   @media ${breakPoints.mobile} {
     height: 12px;
     margin-left: 16px;
   }
 `;
 
-export const Menu = styled.span`
+export const MenuWeb = styled.span`
   display: flex;
   align-items: center;
-
   @media ${breakPoints.mobile} {
     display: none;
   }
@@ -55,7 +51,6 @@ export const Menu = styled.span`
 export const TitleWrapper = styled.span`
   display: flex;
   align-items: center;
-
   @media ${breakPoints.mobile} {
     margin-bottom: 24px;
   }
@@ -66,23 +61,14 @@ export const BuildIcon = styled.img`
   margin-right: 8px;
 `;
 
-export const Title = styled.span`
+export const TitleWeb = styled.span`
   color: #ffffff;
   font-size: 14px;
   :hover {
-    cursor: pointer;
+    cursor: default;
   }
-
   @media ${breakPoints.mobile} {
     display: none;
-  }
-`;
-
-export const TitleMobile = styled.span`
-  color: #000000;
-  font-size: 14px;
-  :hover {
-    cursor: pointer;
   }
 `;
 
@@ -91,7 +77,6 @@ export const Bar = styled.div`
   height: 16px;
   margin: 0 32px;
   background-color: #ffffff;
-
   @media ${breakPoints.mobile} {
     width: 100%;
     height: 1px;
@@ -101,9 +86,8 @@ export const Bar = styled.div`
   }
 `;
 
-export const AAA = styled.div<{ isOpen: boolean }>`
+export const WrapperMobile = styled.div<{ isOpen: boolean }>`
   display: none;
-
   @media ${breakPoints.mobile} {
     width: 100%;
     height: 100vh;
@@ -117,7 +101,7 @@ export const AAA = styled.div<{ isOpen: boolean }>`
   } ;
 `;
 
-export const BBB = styled.div`
+export const InnerWrapper_ML = styled.div`
   @media ${breakPoints.mobile} {
     width: 280px;
     height: 100%;
@@ -125,25 +109,33 @@ export const BBB = styled.div`
   }
 `;
 
-export const CCC = styled.div<{ isOpen: boolean }>`
-  width: calc(100vw - 280px);
-  height: 100%;
-  background-color: #000000;
-  opacity: 0.5;
-  transition: all 0.4s;
-  position: fixed;
-  top: 0;
-  right: ${(props) => (props.isOpen ? `calc(-100vw)` : 0)};
-`;
-
 export const LogoMobile = styled.img`
   height: 12px;
   margin: 16px 20px;
 `;
 
-export const DDD = styled.div`
+export const MenuMobile = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 36px;
   margin-left: 32px;
+`;
+
+export const TitleMobile = styled.span`
+  color: #000000;
+  font-size: 14px;
+  :hover {
+    cursor: default;
+  }
+`;
+
+export const InnerWrapper_MR = styled.div<{ isOpen: boolean }>`
+  width: calc(100vw - 280px);
+  height: 100%;
+  transition: all 0.4s;
+  position: fixed;
+  top: 0;
+  right: ${(props) => (props.isOpen ? `calc(-100vw)` : 0)};
+  background-color: #000000;
+  opacity: 0.5;
 `;

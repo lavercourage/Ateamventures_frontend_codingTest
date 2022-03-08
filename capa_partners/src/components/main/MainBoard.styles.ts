@@ -10,12 +10,11 @@ export const Wrapper = styled.div`
   align-items: center;
 `;
 
-export const TopWrapper = styled.div`
+export const InnerWrapper_T = styled.div`
   width: 1130px;
   margin-bottom: 32px;
   display: flex;
   flex-direction: column;
-
   @media ${breakPoints.mobile} {
     width: 320px;
     flex-direction: column;
@@ -40,7 +39,6 @@ export const Filter = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   @media ${breakPoints.mobile} {
     display: flex;
     flex-direction: column;
@@ -48,15 +46,14 @@ export const Filter = styled.div`
   }
 `;
 
-export const InnerFilterLeft = styled.div`
+export const InnerWrapper_L = styled.div`
   display: flex;
   align-items: center;
 `;
 
-export const InnerFilterRight = styled.div`
+export const InnerWrapper_R = styled.div`
   display: flex;
   align-items: center;
-
   @media ${breakPoints.mobile} {
     margin-top: 20px;
     font-family: "NotoSansKRM";
@@ -65,7 +62,7 @@ export const InnerFilterRight = styled.div`
   }
 `;
 
-export const RefreshWrapper = styled.div`
+export const InnerWrapper_Refresh = styled.div`
   margin-left: 20px;
   display: flex;
   align-items: center;
@@ -104,7 +101,6 @@ export const NoneContent = styled.div`
   font-family: "NotoSansKRR";
   font-size: 14px;
   text-align: center;
-
   @media ${breakPoints.mobile} {
     width: 320px;
   }
@@ -114,7 +110,6 @@ export const CardWrap = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 366px);
   gap: 16px;
-
   @media ${breakPoints.mobile} {
     display: grid;
     grid-template-columns: repeat(1, 320px);

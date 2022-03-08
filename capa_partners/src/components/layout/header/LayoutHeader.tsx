@@ -10,11 +10,36 @@ const LayoutHeader = () => {
 
   return (
     <>
-      <H.AAA isOpen={isOpen}>
-        <H.BBB>
+      {/* 웹버전 헤더 영역 */}
+      <H.WrapperWeb>
+        <H.InnerWrapper_WL>
+          <H.MenuIcon
+            onClick={onClickMenu}
+            isOpen={isOpen}
+            src="/images/Menu.svg"
+          />
+          <H.LogoWeb src="/images/MainLogoWhite.svg" />
+        </H.InnerWrapper_WL>
+        <H.MenuWeb>
+          <H.TitleWrapper>
+            <H.BuildIcon src="/images/BuildWhite.svg" />
+            <H.TitleWeb style={{ fontFamily: "NotoSansKRM" }}>
+              A 가공 업체
+            </H.TitleWeb>
+          </H.TitleWrapper>
+          <H.Bar />
+          <H.TitleWeb style={{ fontFamily: "NotoSansKRR" }}>
+            로그아웃
+          </H.TitleWeb>
+        </H.MenuWeb>
+      </H.WrapperWeb>
+
+      {/* 모바일버전 헤더 영역 */}
+      <H.WrapperMobile isOpen={isOpen}>
+        <H.InnerWrapper_ML>
           <H.LogoMobile src="/images/MainLogoBlue.svg" />
           <H.Bar />
-          <H.DDD>
+          <H.MenuMobile>
             <H.TitleWrapper>
               <H.BuildIcon src="/images/BuildBlack.svg" />
               <H.TitleMobile style={{ fontFamily: "NotoSansKRM" }}>
@@ -24,30 +49,10 @@ const LayoutHeader = () => {
             <H.TitleMobile style={{ fontFamily: "NotoSansKRR" }}>
               로그아웃
             </H.TitleMobile>
-          </H.DDD>
-        </H.BBB>
-        <H.CCC onClick={onClickMenu} isOpen={!isOpen} />
-      </H.AAA>
-      {/*  */}
-      {/*  */}
-      <H.Wrapper>
-        <H.LeftWrapper>
-          <H.MenuIcon
-            onClick={onClickMenu}
-            isOpen={isOpen}
-            src="/images/Menu.svg"
-          />
-          <H.Logo src="/images/MainLogoWhite.svg" />
-        </H.LeftWrapper>
-        <H.Menu>
-          <H.TitleWrapper>
-            <H.BuildIcon src="/images/BuildWhite.svg" />
-            <H.Title style={{ fontFamily: "NotoSansKRM" }}>A 가공 업체</H.Title>
-          </H.TitleWrapper>
-          <H.Bar />
-          <H.Title style={{ fontFamily: "NotoSansKRR" }}>로그아웃</H.Title>
-        </H.Menu>
-      </H.Wrapper>
+          </H.MenuMobile>
+        </H.InnerWrapper_ML>
+        <H.InnerWrapper_MR onClick={onClickMenu} isOpen={!isOpen} />
+      </H.WrapperMobile>
     </>
   );
 };
