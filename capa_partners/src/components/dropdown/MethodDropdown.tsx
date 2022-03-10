@@ -4,7 +4,9 @@ import { CaretDownOutlined } from "@ant-design/icons";
 import { IMethodDropdownProps } from "./Dropdown.types";
 
 const MethodDropdown = (props: IMethodDropdownProps) => {
-  const handleMenuClick = (e: any) => {};
+  const handleMenuClick = (e: any) => {
+    props.method.push(e);
+  };
 
   // 체크
   const onChange = (e: any) => {
@@ -13,7 +15,6 @@ const MethodDropdown = (props: IMethodDropdownProps) => {
     } else if (e.target.checked === false) {
       props.setIsMethodAmount(props.isMethodAmount - 1);
     }
-    console.log(`checked = ${e.target.checked}`);
   };
 
   const menu = (

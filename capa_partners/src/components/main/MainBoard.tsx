@@ -12,6 +12,8 @@ const MainBoard = (props: IMainBoardProps) => {
   const [isConsult, setIsConsult] = useState<boolean>(false); // 스위치: 상담 중인 요청만 보기
   const [isMethodAmount, setIsMethodAmount] = useState<number>(0); // 가공방식: 체크 수
   const [isMaterialAmount, setIsMaterialAmount] = useState<number>(0); // 재료: 체크 수
+  const [method, setmethod] = useState<string[]>([]);
+  const material: string[] = [];
 
   // 필터링 리셋 버튼
   const onClickRefreshButton = () => {
@@ -30,6 +32,7 @@ const MainBoard = (props: IMainBoardProps) => {
               <MethodDropdown
                 isMethodAmount={isMethodAmount}
                 setIsMethodAmount={setIsMethodAmount}
+                method={method}
               />
               <MaterialDropdown
                 isMaterialAmount={isMaterialAmount}
