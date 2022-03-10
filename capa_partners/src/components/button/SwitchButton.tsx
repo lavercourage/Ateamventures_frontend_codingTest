@@ -1,4 +1,6 @@
 import { Switch } from "antd";
+import { SwitchChangeEventHandler } from "antd/lib/switch";
+import { ChangeEvent } from "react";
 
 interface ISwitchButtonProps {
   setIsConsult: boolean | any;

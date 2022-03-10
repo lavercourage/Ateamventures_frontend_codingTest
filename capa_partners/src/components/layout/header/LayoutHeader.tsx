@@ -1,5 +1,5 @@
-import * as H from "./LayoutHeader.styles";
 import { useState } from "react";
+import * as H from "./LayoutHeader.styles";
 
 const LayoutHeader = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
