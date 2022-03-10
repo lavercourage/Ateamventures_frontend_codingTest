@@ -1,3 +1,3 @@
-export interface IMainBoardUIProps {
-  productData: string[];
+export interface IMainBoardProps {
+  data?: any;
 }

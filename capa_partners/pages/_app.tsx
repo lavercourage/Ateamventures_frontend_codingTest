@@ -4,7 +4,12 @@ import { Global } from "@emotion/react";
 import { globalStyles } from "../src/commons/globalStyles";
 import Layout from "../src/components/layout";
 
-const MyApp = ({ Component, pageProps }) => {
+interface IMyAppProps {
+  Component?: any;
+  pageProps?: any;
+}
+
+const MyApp = ({ Component, pageProps }: IMyAppProps) => {
   return (
     <>
       <Global styles={globalStyles} />

@@ -2,7 +2,7 @@ import * as H from "./LayoutHeader.styles";
 import { useState } from "react";
 
 const LayoutHeader = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const onClickMenu = () => {
     setIsOpen((prev) => !prev);

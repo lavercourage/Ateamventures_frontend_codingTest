@@ -1,6 +1,10 @@
 import MainBoard from "../src/components/main/MainBoard";
 
-const Home = ({ data }) => {
+interface IHomeProps {
+  data?: any;
+}
+
+const Home = ({ data }: IHomeProps) => {
   return (
     <>
       <MainBoard data={data} />

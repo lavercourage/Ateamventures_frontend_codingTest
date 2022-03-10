@@ -1,15 +1,16 @@
 import RequestViewButton from "../button/RequestViewButton";
 import ChattingButton from "../button/ChattingButton";
+import { ICardBoardProps, ICardBoard } from "./CardBoard.types";
 
 import * as C from "./CardBoard.styles";
 
-const CardBoard = (props: any) => {
+const CardBoard = (props: ICardBoardProps) => {
   return (
     <>
       {props.isConsult
         ? props.data
-            .filter((el: any) => el.status === "상담중")
-            .map((el: any) => (
+            .filter((el: ICardBoard) => el.status === "상담중")
+            .map((el: ICardBoard) => (
               <div key={el.id}>
                 {el.status === "상담중" && (
                   // 상태 : 상담 중인 요청만 보기
@@ -46,7 +47,7 @@ const CardBoard = (props: any) => {
               </div>
             ))
         : // 상태 : 모든 요청 보기
-          props.data.map((el: any) => (
+          props.data.map((el: ICardBoard) => (
             <C.Wrapper key={el.id}>
               <C.InnerWrapper>
                 <C.Title>{el.title}</C.Title>

@@ -1,7 +1,11 @@
 import LayoutHeader from "./header/LayoutHeader";
 import styled from "@emotion/styled";
 
-const Layout = (props: any) => {
+interface ILayoutProps {
+  children?: any;
+}
+
+const Layout = (props: ILayoutProps) => {
   return (
     <>
       <LayoutHeader />

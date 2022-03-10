@@ -1,11 +1,14 @@
 import { Switch } from "antd";
 
-const SwitchButton = (props: any) => {
+interface ISwitchButtonProps {
+  setIsConsult: boolean | any;
+}
+
+const SwitchButton = (props: ISwitchButtonProps) => {
   return (
     <Switch
       onChange={(value) => {
         props.setIsConsult(value);
-        console.log("bbb", value);
       }}
     />
   );
