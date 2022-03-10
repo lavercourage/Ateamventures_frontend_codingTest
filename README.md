@@ -22,7 +22,8 @@ Ateamventures_frontend_cordingTest 안의 capa_partners 에서
 
 시도 1 : 필터링 리셋 버튼을 누를 시 체크된 항목이 해제되게 시도
 
-</p>
+<p></p>
+
 ### 조건에 맞춘 카드 내용 보여주기
 
 문제 1-1 : 체크한 목록과 카드의 내용 데이터 일치 연동 못함
