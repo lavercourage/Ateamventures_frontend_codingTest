@@ -1,4 +1,4 @@
-# Ateamventures_frontend_cordingTest
+# Ateamventures_frontend_codingTest
 
 에이팀벤쳐스 프론트엔드 지원 김정음
 
@@ -6,7 +6,7 @@
 
 ## 실행하기
 
-Ateamventures_frontend_cordingTest 안의 capa_partners 에서
+Ateamventures_frontend_codingTest 안의 capa_partners 에서
 
 1. yarn install 후 yarn dev 실행
 2. json-server ./requests.json --port 4000 데이터 호출 서버 실행
